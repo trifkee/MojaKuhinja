@@ -1,0 +1,97 @@
+<head>
+    <link rel="stylesheet" href="/css/korpa.css">
+</head>
+
+<div class="wrapper">
+    <main>
+        <div class="header">
+
+            <h1>Racun</h1>
+
+            <div class="header-ikone">
+                <a href="/" class="header-ikona">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+
+            </div>
+        </div>
+        <!-- -- -->
+        <div class="korpa-items">
+
+
+            <div class="korpa-content">
+                <div class="korpa-item">
+                    <div class="item-img">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                    <div class="item-tekst">
+                        <h1>Cezar Salata</h1>
+                        <div class="item-tekst-info">
+                            <p>Komada: <span>1</span></p>
+                            <p>360 <span>RSD</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --- -->
+
+
+    </main>
+</div>
+
+
+<div class="korpa-meni-podeljen korpa-zavrsi">
+    <div class="korpa-zavrsi-info">
+
+        <div class="zavrsi-ikona toggle">
+            <p>Racun</p>
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </div>
+
+        <div class="zavrsi-meni">
+            <div class="zavrsi-header">
+                <h1>Super!</h1>
+                <p>Jos par koraka i tvoja narudzbina stize!</p>
+            </div>
+
+            <form action="" class="zavrsi-forma">
+
+                <div class="forma forma-ime">
+                    <label for="ime">Ime</label>
+                    <input type="text" id="ime" placeholder="Marko" required>
+                </div>
+
+                <div class="forma forma-adr">
+                    <label for="adresa">Adresa</label>
+                    <input type="text" id="adresa" placeholder="Hajduka Veljka bb" required>
+                </div>
+
+                <div class="forma forma-br">
+                    <label for="broj">Broj telefona</label>
+                    <input type="number" id="broj" min="0" placeholder="+381 1111 111" required>
+                </div>
+
+            </form>
+
+            <div class="zavrsi-tekst">
+                <p>Total: <span>360RSD</span></p>
+                <a href="#" class="zavrsi-button">
+                    <p class="zavrsi-paragraf">naruci</p>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="zavrsi-img">
+
+    </div>
+</div>
+
+<script>
+    const korpa = document.querySelector('.korpa-zavrsi');
+    const korpaToggle = document.querySelector('.zavrsi-ikona');
+    korpaToggle.onclick = function () {
+        korpa.classList.toggle('active')
+    }
+</script>
